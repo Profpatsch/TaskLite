@@ -194,14 +194,7 @@ nameToAliasList = (
 
 {- Imitates output from `git describe` -}
 versionSlug :: Text
-versionSlug =
-  let
-    gitInfo = $$tGitInfoCwd
-  in
-    fromString $
-      (showVersion version)
-      <> "+" <> take 8 (giHash gitInfo)
-      <> (if giDirty gitInfo then "-dirty" else "")
+versionSlug = fromString $ (showVersion version)
 
 
 aliasWarning :: Text -> Doc AnsiStyle
