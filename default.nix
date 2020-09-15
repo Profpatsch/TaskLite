@@ -1,7 +1,7 @@
 { # Fetch the latest haskell.nix and import its default.nix
   haskellNix ? import (builtins.fetchTarball {
-    url = "https://github.com/input-output-hk/haskell.nix/archive/master.tar.gz";
-    sha256 = "1iz6yi9dxpw2icm93d1panfhgpzbfsnb7y8k6hm009ghv9g2xb1i";
+    url = "https://github.com/input-output-hk/haskell.nix/archive/b1c3dabc8c7ca25e74582ede28996fa119e3c5d1.tar.gz";
+    sha256 = "09wjf3k97glcispw5jclnf1cq15nlzfdm3dxzq1545hbn6l8135c";
   }) {}
 
 # haskell.nix provides access to the nixpkgs pins which are used by our CI,
